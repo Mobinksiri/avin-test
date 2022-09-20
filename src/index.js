@@ -4,6 +4,9 @@ import "./index.css";
 import App from "./App";
 import store from "./store/store";
 import { Provider } from "react-redux";
+import { fetchData } from "./store/dataReducer";
+
+store.dispatch(fetchData());
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

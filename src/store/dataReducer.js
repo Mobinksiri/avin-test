@@ -3,7 +3,8 @@ import axios from "axios";
 
 const initialState = {
    posts: [],
-   loading: false,
+   loading: true,
+   success: false,
    error: null,
 };
 
@@ -18,20 +19,24 @@ const dataReducer = createSlice({
    initialState,
    extraReducers: {
       [fetchData.fulfilled]: (state, action) => {
-         console.log(action.payload);
          state.posts = action.payload;
          state.loading = false;
+         state.success = true;
          state.error = null;
       },
       [fetchData.pending]: (state, action) => {
          state.loading = true;
+         state.success = false;
       },
       [fetchData.rejected]: (state, action) => {
          state.error = "Fetch Error";
+         state.success = false;
       },
    },
 });
 
-export const getData = (state) => state.posts.posts;
+export const getData = (state) => state.data.posts;
+export const getLoading = (state) => state.data.loading;
+export const getSuccess = (state) => state.data.success;
 
 export default dataReducer.reducer;

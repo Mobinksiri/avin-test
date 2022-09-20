@@ -1,18 +1,16 @@
 import "./App.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useEffect } from "react";
-import { fetchData, getData } from "./store/dataReducer";
+import { getData, getLoading, getSuccess } from "./store/dataReducer";
+import Header from "./components/Header/Header";
 
 function App() {
-   const dispatch = useDispatch();
-   const data = useSelector((state) => state.data.posts);
+   useEffect(() => {}, []);
 
-   useEffect(() => {
-      dispatch(fetchData());
-      console.log(data);
-   }, []);
+   const data = useSelector(getData);
+   const success = useSelector(getSuccess);
 
-   return <div className='App'></div>;
+   return <div className='App'>{success ? <Header data={data} /> : null}</div>;
 }
 
 export default App;
