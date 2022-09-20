@@ -28,7 +28,7 @@ const QuadEl = styled.div`
 `;
 
 const Quad = () => {
-   const filteredDate = useSelector((state) =>
+   const quadData = useSelector((state) =>
       state.data.posts.data.find(
          (item) => item.type === "banner" && item.data.style.type === "quad"
       )
@@ -44,7 +44,7 @@ const Quad = () => {
                slidesPerView={5}
                grabCursor
             >
-               {filteredDate.data.items.map((item) => (
+               {quadData.data.items.map((item) => (
                   <SwiperSlide key={item.image_path}>
                      <div className='quad-item'>
                         <img src={item.image_path} alt='' />

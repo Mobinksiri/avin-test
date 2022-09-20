@@ -41,14 +41,14 @@ const CategoriesEl = styled.div`
 `;
 
 const Categories = () => {
-   const filteredDate = useSelector((state) =>
+   const categoriesData = useSelector((state) =>
       state.data.posts.data.find((item) => item.type === "category")
    );
 
    return (
       <CategoriesEl>
          <Container>
-            <h1 className='title'>{filteredDate.data.category.title_fa}</h1>
+            <h1 className='title'>{categoriesData.data.category.title_fa}</h1>
             <Swiper
                modules={[Autoplay]}
                spaceBetween={20}
@@ -56,7 +56,7 @@ const Categories = () => {
                slidesPerView={5}
                grabCursor
             >
-               {filteredDate.data.items.map((item) => (
+               {categoriesData.data.items.map((item) => (
                   <SwiperSlide key={item.title_fa}>
                      <div className='category-item'>
                         <img src={item.poster_path} alt='' />

@@ -35,7 +35,7 @@ const FooterBannersEl = styled.div`
 `;
 
 const Quad = () => {
-   const filteredDate = useSelector((state) =>
+   const footerBanners = useSelector((state) =>
       state.data.posts.data.find(
          (item) => item.type === "banner" && item.data.style.type === "item"
       )
@@ -45,7 +45,7 @@ const Quad = () => {
       <FooterBannersEl>
          <Container>
             <div className='footer-items'>
-               {filteredDate.data.items.map((item) => (
+               {footerBanners.data.items.map((item) => (
                   <div key={item.image_path} className='footer-item'>
                      <img src={item.image_path} alt='' />
                   </div>

@@ -17,20 +17,6 @@ const LongEl = styled.div`
    margin: 0 auto;
    margin-bottom: 50px;
 
-   .swiper {
-      .swiper-pagination {
-         span {
-            background-color: #fff;
-            opacity: 0.3;
-            width: 5px;
-            height: 5px;
-         }
-         .swiper-pagination-bullet-active {
-            opacity: 0.8;
-         }
-      }
-   }
-
    .long-item {
       width: 100%;
 
@@ -43,7 +29,7 @@ const LongEl = styled.div`
 `;
 
 const Long = () => {
-   const filteredDate = useSelector((state) =>
+   const banners = useSelector((state) =>
       state.data.posts.data.find(
          (item) => item.type === "banner" && item.data.style.type === "long"
       )
@@ -52,7 +38,7 @@ const Long = () => {
    return (
       <LongEl>
          <Swiper spaceBetween={5} slidesPerView={1} grabCursor>
-            {filteredDate.data.items.map((item) => (
+            {banners.data.items.map((item) => (
                <SwiperSlide key={item.image_path}>
                   <div className='long-item'>
                      <img src={item.image_path} alt='' />
