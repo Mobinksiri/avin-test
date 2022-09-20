@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { getData, getLoading, getSuccess } from "./store/dataReducer";
 import Header from "./components/Header/Header";
 import Quad from "./components/Quad/Quad";
+import Categories from "./components/Categories/Categories";
 
 function App() {
    useEffect(() => {}, []);
@@ -15,7 +16,7 @@ function App() {
       <div className='App'>
          {success ? (
             <>
-               <Header data={data} /> <Quad />
+               <Header data={data} /> <Quad /> <Categories />
             </>
          ) : null}
       </div>
