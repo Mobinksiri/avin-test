@@ -1,0 +1,153 @@
+{
+   "success": true,
+   "message": null,
+   "data": [
+      {
+         "type": "banner",
+         "data": {
+            "style": {
+               "type": "full"
+            },
+            "items": [
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/103736?crc=1638687001"
+               },
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/103724?crc=1638008964"
+               },
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/103727?crc=1638009590"
+               }
+            ]
+         }
+      },
+      {
+         "type": "banner",
+         "data": {
+            "style": {
+               "type": "quad"
+            },
+            "items": [
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/103624?crc=1609758235"
+               },
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/103627?crc=1609758308"
+               },
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/103621?crc=1609758169"
+               },
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/103633?crc=1609758451"
+               },
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/103630?crc=1609758383"
+               },
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/103663?crc=1609760138"
+               },
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/103660?crc=1609760084"
+               },
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/103657?crc=1609760243"
+               }
+            ]
+         }
+      },
+      {
+         "type": "category",
+         "data": {
+            "category": {
+               "title_fa": "تازه‌ها"
+            },
+            "items": [
+               {
+                  "title_fa": "اسمورف ها",
+                  "poster_path": "https://api.tamashakhoneh.ir/assets/series/101189"
+               },
+               {
+                  "title_fa": "بازی مرکب",
+                  "poster_path": "https://api.tamashakhoneh.ir/assets/series/101186"
+               },
+               {
+                  "title_fa": "شانگ چی و افسانه ده حلقه",
+                  "poster_path": "https://api.tamashakhoneh.ir/assets/movies/10028117"
+               },
+               {
+                  "title_fa": "ونوم: بگذارید کارنیج بیاید",
+                  "poster_path": "https://api.tamashakhoneh.ir/assets/movies/10028114"
+               },
+               {
+                  "title_fa": "نهضت بیداری: سلجوقیان بزرگ",
+                  "poster_path": "https://api.tamashakhoneh.ir/assets/series/101183"
+               },
+               {
+                  "title_fa": "شادی",
+                  "poster_path": "https://api.tamashakhoneh.ir/assets/series/101180"
+               },
+               {
+                  "title_fa": "آمرزیدگان شهر نیوآرک",
+                  "poster_path": "https://api.tamashakhoneh.ir/assets/movies/10028021"
+               },
+               {
+                  "title_fa": "وضعیت قرمز",
+                  "poster_path": "https://api.tamashakhoneh.ir/assets/movies/10028018"
+               },
+               {
+                  "title_fa": "فعالیت فراطبیعی : نزدیک به خویشاوند",
+                  "poster_path": "https://api.tamashakhoneh.ir/assets/movies/10028015"
+               },
+               {
+                  "title_fa": " فینچ",
+                  "poster_path": "https://api.tamashakhoneh.ir/assets/movies/10028012"
+               }
+            ]
+         }
+      },
+      {
+         "type": "banner",
+         "data": {
+            "style": {
+               "type": "long"
+            },
+            "items": [
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/103585?crc=1608541990"
+               },
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/103567?crc=1608012585"
+               },
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/103525?crc=1607167583"
+               },
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/103081?crc=1600079643"
+               }
+            ]
+         }
+      },
+      {
+         "type": "banner",
+         "data": {
+            "style": {
+               "type": "item"
+            },
+            "items": [
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/102889?crc=1598163086"
+               },
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/102892?crc=1598163110"
+               },
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/102898?crc=1598163138"
+               },
+               {
+                  "image_path": "https://api.tamashakhoneh.ir/assets/banners/102895?crc=1598163125"
+               }
+            ]
+         }
+      }
+   ]
+}
