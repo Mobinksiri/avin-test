@@ -15,7 +15,7 @@ const LongEl = styled.div`
    display: flex;
    max-width: 1600px;
    margin: 0 auto;
-   margin-bottom: 30px;
+   margin-bottom: 50px;
 
    .swiper {
       .swiper-pagination {

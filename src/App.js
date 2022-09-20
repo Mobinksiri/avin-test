@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import Quad from "./components/Quad/Quad";
 import Categories from "./components/Categories/Categories";
 import Long from "./components/LongBanner/Long";
+import FooterBanner from "./components/FooterBanner/FooterBanners";
 
 function App() {
    useEffect(() => {}, []);
@@ -18,6 +19,7 @@ function App() {
          {success ? (
             <>
                <Header data={data} /> <Quad /> <Categories /> <Long />
+               <FooterBanner />
             </>
          ) : null}
       </div>
