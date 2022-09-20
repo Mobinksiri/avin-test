@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
@@ -51,10 +51,11 @@ const Header = () => {
    return (
       <HeaderEl>
          <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={[Pagination, Autoplay]}
             pagination={{ clickable: true }}
-            spaceBetween={50}
+            spaceBetween={5}
             slidesPerView={1}
+            autoplay={{ delay: 5000, disableOnInteraction: true }}
             grabCursor
          >
             {filteredDate.data.items.map((item) => (
